@@ -1,15 +1,16 @@
 const getUnKnowMemePicture = () => {
-  document.getElementById('pop').src = 'unknow.png';
-  playerScore++;
+  image.src = 'unknow.png';
 };
 
 const getKnowMemePicture = () => {
-  document.getElementById('pop').src = 'know.png';
+  image.src = 'know.png';
+  playerScore++;
+  let audio = new Audio('click.wav');
   audio.play();
 };
 
 let playerScore = 0;
-const audio = document.getElementById('audio');
+const image = document.getElementById('pop');
 const score = document.getElementById('score');
 score.innerHTML = playerScore;
 
