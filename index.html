@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pop meme</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #868580;
+    }
+    img {
+      border-radius: 5px;
+    }
+    #score {
+      font-size: 20px;
+    }
+    #audio {
+      display: none;
+    }
+  </style>
+  <body onkeydown="getKnowMemePicture()" onkeyup="getUnKnowMemePicture()">
+    <div>
+      <img
+        id="pop"
+        src="unknow.png"
+        onmousedown="getKnowMemePicture()"
+        onmouseup="getUnKnowMemePicture()"
+      />
+    </div>
+    <div id="score"></div>
+    <audio id="audio" src="click.wav" controls></audio>
+  </body>
+  <script src="popcat.js"></script>
+</html>
