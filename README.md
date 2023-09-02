@@ -8,5 +8,8 @@
   audio.play();
   ```
   <li>local storage</li>
-  <li>interaction to changing image file</li>
+
+  ```
+ localStorage.setItem('score', playerScore);
+  ```
 </ul>
