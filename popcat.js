@@ -3,7 +3,7 @@ const image = document.getElementById('pop');
 const score = document.getElementById('score');
 score.innerHTML === 0
   ? (score.innerHTML = playerScore)
-  : (score.innerHTML = localStorage.getItem('score'));
+  : (score.innerHTML = localStorage.getItem('score')); playerScore = score.innerHTML;
 
 const getUnKnowMemePicture = () => {
   image.src = 'unknow.png';
